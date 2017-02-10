@@ -1,0 +1,96 @@
+.Sidebar {
+    width: 250px;
+    float: left;
+    border-right: 1px solid #ccc;
+    height: calc(100% - 66px);
+}
+
+.ChatPanel {
+    background: url(https://s-media-cache-ak0.pinimg.com/236x/51/ed/c0/51edc046eb80046ee4755ee71d0f19ca.jpg);
+    width: calc(100% - 250px);
+    height: calc(100% - 66px);
+    margin-left: 250px;
+    transition: all 0.3s ease-out;
+   
+}
+
+.ChatPanel.InfoOpen {
+    width: calc(100% - 500px);
+}
+
+.ChatHeader {
+    width: 100%;
+    height: 50px;
+    background: rgb(81, 113, 158);
+    padding: 4px 8px;
+     cursor: pointer;
+    box-sizing: border-box;
+}
+
+.ChatBody {
+  height: calc(100% - 125px);
+  position: relative;
+  
+ }
+
+.ChatBody .ChatMessageList {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+}
+
+.ChatBody .ChatMessage > div {
+
+  color: rgb(119, 142, 179) !important;
+}
+
+.ChatBody .ChatMessage > div {
+  
+  min-width: 200px;
+  max-width: calc(100% - 80px);
+  display: inline-block;
+  padding: 8px;
+}
+
+
+.ChatBody .ChatMessage.Mine {
+  text-align: right;
+}
+
+.ChatBody .ChatMessage.Mine > div {
+      background-color: rgb(119, 142, 179) !important;
+    color: white !important;
+
+}
+
+.ChatComposer {
+    width: 100%;
+  background: rgb(236,	236,	236	);
+    height: 75px; 
+    padding: 4px 8px;
+    border-top: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.ChatComposer .ComposerInput {
+  width: calc(100% - 88px) !important;
+}
+
+.ChatHeader h1 {
+    font-weight: lighter;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: relative;
+    top: -12px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.InfoPanel h1,
+.InfoPanel h2 {
+    font-weight: lighter;
+}
