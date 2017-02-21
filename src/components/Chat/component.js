@@ -11,7 +11,20 @@ class ContactList extends React.Component {
 
     render() {
 
+
+
         const {isInfoOpen, onInfoClick} = this.props;
+        const {buddy} = this.props;
+
+        if (!buddy) {
+
+            return (<div className="ChatPanel">
+                <div className="ChatHeader" />
+                <div className="ChatBody" />
+            </div>);
+
+        }
+
 
         var rootClass = "ChatPanel";
 
@@ -22,8 +35,8 @@ class ContactList extends React.Component {
         return (
             <div className={rootClass}>
                 <div className="ChatHeader" onClick={onInfoClick} >
-                    <Avatar src="https://avatars2.githubusercontent.com/u/2396226?v=3&s=460" />
-                    <h1> Luan Bixão </h1>
+                    <Avatar src={buddy.image} />
+                    <h1> {buddy.username}</h1>
                 </div>
                 <div className="ChatBody">
                     <div className="ChatMessageList">

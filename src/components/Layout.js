@@ -5,6 +5,8 @@ import ContactList from './ContactList';
 import Chat from './Chat';
 import InfoPanel from './InfoPanel';
 
+import Register from './Register';
+
 class Layout extends React.Component {
 
     render() {
@@ -17,6 +19,8 @@ class Layout extends React.Component {
                 <ContactList />
                 {this.props.children}
                 <InfoPanel isInfoOpen={isInfoOpen}  onCloseClick={onInfoClick} />
+                <Register />
+                
             </div>
         );
 
